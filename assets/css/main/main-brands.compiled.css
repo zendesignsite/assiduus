@@ -1,0 +1,45 @@
+#section--page--main--brands a {
+  text-decoration: none;
+}
+
+#section--page--main--brands a .svg {
+  max-width: 100px;
+}
+
+#section--page--main--brands a:hover {
+  color: #1D4F85 !important;
+}
+
+#section--page--main--brands a:hover .svg path {
+  fill: #1D4F85 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  #section--page--main--brands .btn-group > .btn {
+    width: calc(100% / 6);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #section--page--main--brands .btn-group > .btn {
+    width: calc(100% / 6);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #section--page--main--brands .btn-group > .btn {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #section--page--main--brands .btn-group > .btn {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  #section--page--main--brands .btn-group > .btn {
+    width: calc(100% / 2);
+  }
+}

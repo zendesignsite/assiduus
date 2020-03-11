@@ -1,0 +1,73 @@
+#section--page--main--articles .article__card {
+  position: relative;
+}
+
+#section--page--main--articles .article__card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(32, 32, 32, 0.85) 15%, rgba(32, 32, 32, 0) 100%);
+}
+
+#section--page--main--articles .article__card:hover:before {
+  background: linear-gradient(45deg, rgba(29, 79, 133, 0.85) 70%, rgba(29, 79, 133, 0.85) 100%);
+}
+
+#section--page--main--articles .article__card > div {
+  position: absolute;
+  bottom: 0;
+  z-index: 500;
+}
+
+#section--page--main--articles .article__card > div a.bg-white, #section--page--main--articles .article__card > div span.bg-white {
+  box-shadow: .25em 0 0 #FFFFFF, -.25em 0 0 #FFFFFF;
+}
+
+#section--page--main--articles .article__card > div a.bg-dark, #section--page--main--articles .article__card > div span.bg-dark {
+  box-shadow: .25em 0 0 #343a40, -.25em 0 0 #343a40;
+}
+
+#section--page--main--articles .article__card > div a.bg-black, #section--page--main--articles .article__card > div span.bg-black {
+  background: black;
+  box-shadow: .25em 0 0 black, -.25em 0 0 black;
+}
+
+#section--page--main--articles .article__card > div a.bg-primary, #section--page--main--articles .article__card > div span.bg-primary {
+  background: #1D4F85;
+  box-shadow: 0.25em 0 0 #1D4F85, -0.25em 0 0 #1D4F85;
+}
+
+#section--page--main--articles .article__card > div a > a, #section--page--main--articles .article__card > div a span, #section--page--main--articles .article__card > div span > a, #section--page--main--articles .article__card > div span span {
+  position: relative;
+  z-index: 100;
+}
+
+@media screen and (min-width: 1200px) {
+  #section--page--main--articles .article__card.article__card__lg img {
+    height: 30vw;
+  }
+  #section--page--main--articles .article__card.article__card__sm img {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #section--page--main--articles .article__card.article__card__lg img {
+    height: 40vw;
+  }
+  #section--page--main--articles .article__card.article__card__sm img {
+    height: 20vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #section--page--main--articles .article__card.article__card__lg img {
+    height: 60vw;
+  }
+  #section--page--main--articles .article__card.article__card__sm img {
+    height: 45vw;
+  }
+}

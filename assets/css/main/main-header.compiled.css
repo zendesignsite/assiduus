@@ -1,0 +1,30 @@
+#section--page--main--header > a {
+  position: relative;
+  overflow: hidden;
+}
+
+#section--page--main--header > a > div {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #section--page--main--header > a > div {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+}
+
+@media (min-width: 992px) {
+  #section--page--main--header > a > div {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  }
+}
+
+#section--page--main--header > a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}

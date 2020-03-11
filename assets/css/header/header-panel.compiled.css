@@ -1,0 +1,42 @@
+#section--page--header--panel {
+  background: black !important;
+}
+
+#section--page--header--panel a i {
+  transform: rotate(90deg);
+  transition: transform .25s;
+}
+
+#section--page--header--panel a.collapsed i {
+  transform: rotate(0);
+}
+
+#section--page--header--panel a.border-left {
+  border: none !important;
+  position: relative;
+}
+
+#section--page--header--panel a.border-left:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+#section--page--header--panel button[data-toggle="collapse"] {
+  transform: rotate(0);
+  transition: transform .5s;
+}
+
+#section--page--header--panel button[data-toggle="collapse"]:hover {
+  transform: rotate(180deg);
+}
+
+#section--page--header--panel button[data-toggle="collapse"] i {
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
